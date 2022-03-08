@@ -1,0 +1,7 @@
+footer > div > ul > li:hover:nth-child(even) {
+	color: #004369;
+}
+
+footer > div > ul > li:hover:nth-child(odd) {
+	color: #db1f48;
+}

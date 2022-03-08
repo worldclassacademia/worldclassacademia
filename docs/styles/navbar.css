@@ -1,0 +1,7 @@
+#navbar-items > ul > li:hover:nth-child(even) {
+	color: #004369;
+}
+
+#navbar-items > ul > li:hover:nth-child(odd) {
+	color: #db1f48;
+}

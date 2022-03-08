@@ -1,0 +1,9 @@
+#display > a:hover:nth-child(even) {
+	background-color: #004369;
+	color: white;
+}
+
+#display > a:hover:nth-child(odd) {
+	background-color: #db1f48;
+	color: white;
+}
