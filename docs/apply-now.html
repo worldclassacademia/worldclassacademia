@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Education is fundamental to the growth of communities, societies and individuals. Education is the engine which transforms our ambitions into a lifestyle. Education empowers us to do what we love. This is why at ‘World Class Academia Ltd’ we are committed to providing you with a world class service to help you to enrol to a course which you will enjoy and prosper at. "
+		/>
+		<meta name="keywords" content="Study, Study UK, Study Internationally" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="worldclassacademia.com" />
+		<meta name="twitter:title" content="WCA - Study in the UK" />
+		<meta
+			name="twitter:description"
+			content="Education is fundamental to the growth of communities, societies and individuals. Education is the engine which transforms our ambitions into a lifestyle. Education empowers us to do what we love. This is why at ‘World Class Academia Ltd’ we are committed to providing you with a world class service to help you to enrol to a course which you will enjoy and prosper at. "
+		/>
+		<meta name="twitter:image" content="https://worldclassacademia.com/assets/images/canary%20wharf.jpg" />
+
+		<meta property="og:type" content="business.business" />
+		<meta property="og:title" content="WCA - Study in the UK" />
+		<meta property="og:url" content="https://worldclassacademia.com" />
+		<meta property="og:image" content="https://worldclassacademia.com/assets/images/canary%20wharf.jpg" />
+		<meta
+			property="business:contact_data:street_address"
+			content="40 Bank street Level 18 Canary Wharf London United Kingdom E14 5NR"
+		/>
+		<meta property="business:contact_data:locality" content="London" />
+		<meta property="business:contact_data:region" content="N/A" />
+		<meta property="business:contact_data:postal_code" content="N/A" />
+		<meta property="business:contact_data:country_name" content="United Kingdom" />
+
+		<title>WCA - Apply Now</title>
+		<link rel="stylesheet" href="./styles/preflight.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/flowbite@1.3.4/dist/datepicker.js"></script>
+		<script src="./scripts/index.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+		<link rel="manifest" href="./site.webmanifest" />
+	</head>
+	<body class="antialiased">
+		<!-- NAVBAR -->
+		<nav class="items-center justify-around hidden w-full h-20 lg:flex">
+			<div>
+				<a href="./index.html"
+					><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="h-20 rounded"
+				/></a>
+			</div>
+			<div id="navbar-items">
+				<ul class="flex">
+					<li class="cursor-pointer"><a href="./index.html">Home</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./about-us.html">About Us</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./team.html">The Team</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./int-support.html">International Support</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./study-uk.html">Study UK</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./contact-us.html">Contact Us</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./apply-now.html">Apply Now</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- MOBILE NAVBAR -->
+		<nav id="menu" class="flex items-center justify-between w-full h-16 p-2 px-6 bg-white lg:hidden">
+			<div>
+				<a href="./index.html"
+					><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="rounded h-14"
+				/></a>
+			</div>
+			<div id="mobile-toggle" class="cursor-pointer noSelectEffect">
+				<svg
+					id="menu"
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-6 h-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				</svg>
+			</div>
+			<div id="navbar-items-mobile" class="absolute top-0 right-0 z-20 hidden w-6/12 min-h-screen bg-white">
+				<ul class="flex flex-col text-center">
+					<a href="./index.html"><li class="p-2 my-2 cursor-pointer">Home</li></a>
+					<a href="./about-us.html"><li class="p-2 my-2 cursor-pointer">About Us</li></a>
+					<a href="./team.html"><li class="p-2 my-2 cursor-pointer">The Team</li></a>
+					<a href="./int-support.html"><li class="p-2 my-2 cursor-pointer">International Support</li></a>
+					<a href="./study-uk.html"><li class="p-2 my-2 cursor-pointer">Study UK</li></a>
+					<a href="./contact-us.html"><li class="p-2 my-2 cursor-pointer">Contact Us</li></a>
+					<a href="./apply-now.html"><li class="p-2 my-2 cursor-pointer">Apply Now</li></a>
+					<a href="./faq.html"><li class="p-2 my-2 cursor-pointer">FAQ</li></a>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<div id="header" class="relative overflow-hidden text-white h-80">
+			<div id="grey-filter" class="absolute z-10 min-w-full min-h-full bg-gray-900 bg-opacity-50"></div>
+			<img
+				src="./assets/images/apply-now.jpg"
+				alt=""
+				class="object-cover w-full h-full xl:h-auto xl:object-none xl:absolute xl:-top-80"
+			/>
+			<div class="absolute z-10 font-bold inset-center">
+				<h1 class="text-4xl md:text-6xl lg:text-7xl">Apply Now</h1>
+			</div>
+		</div>
+
+		<div class="container w-10/12 m-auto my-40 text-center lg:flex-row">
+			<div>
+				<h2 class="w-10/12 m-auto text-xl">We process applications on behalf of Our Partners & Accreditations</h2>
+
+				<div class="flex flex-col justify-center my-10 text-center md:flex-row">
+					<p class="my-2 md:mx-10">Cambridge education group</p>
+					<p class="my-2 md:mx-10">Oxford education group</p>
+					<p class="my-2 md:mx-10">SIA-UK</p>
+				</div>
+			</div>
+
+			<div class="my-20">
+				<h2 class="w-10/12 m-auto my-10 text-xl">Please see below the list of universities</h2>
+
+				<div class="w-10/12 m-auto md:w-6/12 h-60">
+					<ul class="p-2 m-auto overflow-y-auto border border-black h-60">
+						<li class="my-2">Birbeck University of London</li>
+						<li class="my-2">Royal Holloway University</li>
+						<li class="my-2">The Courtauld University of Art</li>
+						<li class="my-2">Queen Mary University of London</li>
+						<li class="my-2">Royal Veterinary College University of London</li>
+						<li class="my-2">Goldsmiths University of London</li>
+						<li class="my-2">University of central Lancashire</li>
+						<li class="my-2">Royal College of Surgeons Ireland (RCSI)</li>
+						<li class="my-2">St Georges University</li>
+						<li class="my-2">University of South-hampton</li>
+						<li class="my-2">Aston University- Birmingham UK</li>
+						<li class="my-2">University of Hull</li>
+						<li class="my-2">University of Sunderland</li>
+						<li class="my-2">Aberdeen University</li>
+						<li class="my-2">Abertay University</li>
+						<li class="my-2">Aberystwyth University</li>
+						<li class="my-2">Anglia Ruskin University</li>
+						<li class="my-2">Arts University Bournemouth</li>
+						<li class="my-2">Aston University</li>
+						<li class="my-2">BANGOR BUSINESS SCHOOL</li>
+						<li class="my-2">Bangor University</li>
+						<li class="my-2">Bath Spa University</li>
+						<li class="my-2">Bath University</li>
+						<li class="my-2">Bedfordshire University</li>
+						<li class="my-2">Birmingham City University</li>
+						<li class="my-2">Birmingham University</li>
+						<li class="my-2">Bolton University</li>
+						<li class="my-2">Bournemouth University</li>
+						<li class="my-2">BPP University Limited</li>
+						<li class="my-2">Bradford University</li>
+						<li class="my-2">Brighton University</li>
+						<li class="my-2">Bristol University</li>
+						<li class="my-2">Brunel University</li>
+						<li class="my-2">Buckingham University</li>
+						<li class="my-2">Cambridge Education Group (All Centres)</li>
+						<li class="my-2">Canterbury Christ Church University</li>
+						<li class="my-2">Cardiff Metropolitan University</li>
+						<li class="my-2">Cardiff University</li>
+						<li class="my-2">Central Lancashire University</li>
+						<li class="my-2">Chester University</li>
+						<li class="my-2">Chichester University</li>
+						<li class="my-2">City University</li>
+						<li class="my-2">Coventry University</li>
+						<li class="my-2">Coventry University - London Campus</li>
+						<li class="my-2">Cranfield University</li>
+						<li class="my-2">De Montfort University</li>
+						<li class="my-2">Derby University</li>
+						<li class="my-2">Dundee University</li>
+						<li class="my-2">Durham University</li>
+						<li class="my-2">East Anglia University</li>
+						<li class="my-2">East London University</li>
+						<li class="my-2">Edge Hill University</li>
+						<li class="my-2">Edinburgh Business School</li>
+						<li class="my-2">Edinburgh Napier University</li>
+						<li class="my-2">Edinburgh University</li>
+						<li class="my-2">Essex University</li>
+						<li class="my-2">Exeter University</li>
+						<li class="my-2">Falmouth University</li>
+						<li class="my-2">Glasgow Caledonian London Campus</li>
+						<li class="my-2">Glasgow Caledonian University</li>
+						<li class="my-2">Glasgow School of Art</li>
+						<li class="my-2">Glasgow University</li>
+						<li class="my-2">Gloucestershire University</li>
+						<li class="my-2">Goldsmiths University of London</li>
+						<li class="my-2">Greenwich University</li>
+						<li class="my-2">Harper Adams University</li>
+						<li class="my-2">Heriot-Watt University</li>
+						<li class="my-2">Hertfordshire University</li>
+						<li class="my-2">Huddersfield University</li>
+						<li class="my-2">Hull University</li>
+						<li class="my-2">Hult International Business School AG</li>
+						<li class="my-2">INTO University Partnerships (All Centres)</li>
+						<li class="my-2">Istituto Marangoni</li>
+						<li class="my-2">Kaplan (All Centres)</li>
+						<li class="my-2">Keele University</li>
+						<li class="my-2">Kent University</li>
+						<li class="my-2">King's College London (KCL)</li>
+						<li class="my-2">Kingston University</li>
+						<li class="my-2">Lancaster University</li>
+						<li class="my-2">Leeds Beckett University</li>
+						<li class="my-2">Leeds Trinity University</li>
+						<li class="my-2">Leeds University</li>
+						<li class="my-2">Leicester University</li>
+						<li class="my-2">Lincoln University</li>
+						<li class="my-2">Liverpool Hope University</li>
+						<li class="my-2">Liverpool John Moores University</li>
+						<li class="my-2">Liverpool University</li>
+						<li class="my-2">London Metropolitan University</li>
+						<li class="my-2">London South Bank University</li>
+						<li class="my-2">Loughborough University</li>
+						<li class="my-2">Loughborough University - London Campus</li>
+						<li class="my-2">Manchester Metropolitan University</li>
+						<li class="my-2">Manchester University</li>
+						<li class="my-2">Middlesex University</li>
+						<li class="my-2">Newcastle University</li>
+						<li class="my-2">Northampton University</li>
+						<li class="my-2">Northumbria University</li>
+						<li class="my-2">Norwich University Of The Arts</li>
+						<li class="my-2">Nottingham Trent University</li>
+						<li class="my-2">Nottingham University</li>
+						<li class="my-2">Oxford Brookes University</li>
+						<li class="my-2">Plymouth University</li>
+						<li class="my-2">Portsmouth University</li>
+						<li class="my-2">QA Higher Education (Roehampton/Northumbria Lon campus/Ulster University)</li>
+						<li class="my-2">Queen Margaret University</li>
+						<li class="my-2">Queen Mary University of London</li>
+						<li class="my-2">Queen's University Belfast</li>
+						<li class="my-2">Ravensbourne</li>
+						<li class="my-2">Reading University</li>
+						<li class="my-2">Regents University London</li>
+						<li class="my-2">Richmond The American International University in London</li>
+						<li class="my-2">Robert Gordon University</li>
+						<li class="my-2">Roehampton University</li>
+						<li class="my-2">Royal Agricultural University</li>
+						<li class="my-2">Royal Holloway University of London</li>
+						<li class="my-2">Salford University</li>
+						<li class="my-2">School of Oriental and African Studies London (SOAS)</li>
+						<li class="my-2">Sheffield Hallam University</li>
+						<li class="my-2">Sheffield University</li>
+						<li class="my-2">Solent University</li>
+						<li class="my-2">Southampton University</li>
+						<li class="my-2">St Mary's University Twickenham</li>
+						<li class="my-2">Staffordshire University</li>
+						<li class="my-2">Stirling University</li>
+						<li class="my-2">Strathclyde University</li>
+						<li class="my-2">Study Group/International Study Centres (All Centres)</li>
+						<li class="my-2">Sunderland University</li>
+						<li class="my-2">Sunderland University - London Campus</li>
+						<li class="my-2">Surrey University</li>
+						<li class="my-2">Sussex University</li>
+						<li class="my-2">Swansea University of Wales</li>
+						<li class="my-2">Teesside University</li>
+						<li class="my-2">Ulster University (London and Birmingham Campuses QA)</li>
+						<li class="my-2">Ulster University Coleraine Campus</li>
+						<li class="my-2">University College Birmingham</li>
+						<li class="my-2">University for the Creative Arts</li>
+						<li class="my-2">University of Law London Bloomsbury</li>
+						<li class="my-2">University of South Wales</li>
+						<li class="my-2">University of Suffolk</li>
+						<li class="my-2">University of Wales Trinity Saint David</li>
+						<li class="my-2">University of West London</li>
+						<li class="my-2">University of West of Scotland</li>
+						<li class="my-2">University of Wolverhampton</li>
+						<li class="my-2">Warwick Manufacturing Group (WMG) & Warwick Business School</li>
+						<li class="my-2">West of England University (Bristol)</li>
+						<li class="my-2">Westminster University</li>
+						<li class="my-2">Winchester University</li>
+						<li class="my-2">York University</li>
+						<li class="my-2">University of Bradford</li>
+						<li class="my-2">University of Greenwich</li>
+						<li class="my-2">Jacobs University</li>
+						<li class="my-2">University of Dundee</li>
+						<li class="my-2">Bangor university</li>
+						<li class="my-2">De Montfort university</li>
+						<li class="my-2">San Francisco State university</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="w-10/12 m-auto md:w-6/12">
+				<h2 class="text-2xl text-teal-600">Student Profile</h2>
+				<form
+					target="_blank"
+					method="POST"
+					action="https://formsubmit.co/admissions@worldclassacademina.com"
+					enctype="multipart/form-data"
+				>
+					<div class="flex m-auto my-6">
+						<div class="relative w-6/12 mr-2">
+							<label for="firstName" class="absolute left-0 text-sm -top-6">First Name</label>
+							<input
+								id="firstName"
+								name="First Name"
+								type="text"
+								class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+								required
+							/>
+						</div>
+						<div class="relative w-6/12">
+							<label for="lastName" class="absolute left-0 text-sm -top-6">Last Name</label>
+							<input
+								id="lastName"
+								name="Last Name"
+								type="text"
+								class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="birth" class="absolute left-0 text-sm -top-6">Birth Date</label>
+
+						<input
+							datepicker
+							datepicker-format="dd/mm/yyyy"
+							id="birth"
+							name="Birth Date"
+							type="text"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						/>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="gender" class="absolute left-0 text-sm -top-6">Gender</label>
+						<input
+							id="gender"
+							name="Gender"
+							type="gender"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						/>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="nationality" class="absolute left-0 text-sm -top-6">Nationality</label>
+						<input
+							id="nationality"
+							name="Nationality"
+							type="nationality"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						/>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="country" class="absolute left-0 text-sm -top-6">Country of studies</label>
+						<input
+							id="country"
+							name="Country"
+							type="country"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						/>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="email" class="absolute left-0 text-sm -top-6">Email</label>
+						<input
+							id="email"
+							name="Email"
+							type="email"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						/>
+					</div>
+
+					<div class="relative mt-10">
+						<label for="info" class="absolute left-0 text-sm -top-6">Additional Info</label>
+						<textarea
+							id="info"
+							name="Additional Info"
+							cols="30"
+							rows="5"
+							class="block w-full p-2 m-auto my-6 text-center border border-black outline-none resize-none rounded-xl focus:rounded-3xl"
+						></textarea>
+					</div>
+
+					<div class="mt-20">
+						<h2 class="text-2xl text-teal-600">Programme Details</h2>
+
+						<select
+							id="destination"
+							name="Destination"
+							class="block w-full h-10 p-2 m-auto my-6 text-center bg-transparent border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						>
+							<option value="" disabled selected class="text-opacity-50">Study Destination</option>
+							<option value="UK">UK</option>
+						</select>
+
+						<select
+							id="programme"
+							name="Programme"
+							class="block w-full h-10 p-2 m-auto my-6 text-center bg-transparent border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						>
+							<option value="" disabled selected class="text-opacity-50">Programme</option>
+							<option value="International Foundation Programme">International foundation programme</option>
+							<option value="International year 1">International year 1</option>
+							<option value="Masters foundation programme">Masters foundation programme</option>
+							<option value="Undergraduate foundation programme">Undergraduate foundation programme</option>
+						</select>
+
+						<select
+							id="pathway"
+							name="Pathway"
+							class="block w-full h-10 p-2 m-auto my-6 text-center bg-transparent border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						>
+							<option value="" disabled selected class="text-opacity-50">Pathway</option>
+							<option value="Engineering and physical sciences">Engineering and physical sciences</option>
+							<option value="Business and economics">Business and economics</option>
+							<option value="Life sciences">Life sciences</option>
+							<option value="Humanities and social sciences">Humanities and social sciences</option>
+						</select>
+
+						<select
+							id="intake"
+							name="Intake"
+							class="block w-full h-10 p-2 m-auto my-6 text-center bg-transparent border border-black outline-none rounded-xl focus:rounded-full"
+							required
+						>
+							<option value="" disabled selected class="text-opacity-50">Intake</option>
+							<option value="Apr 2022">Apr 2022</option>
+							<option value="June 2022">June 2022</option>
+							<option value="Sept 2022">Sept 2022</option>
+							<option value="Jan 2023">Jan 2023</option>
+						</select>
+					</div>
+
+					<div class="mt-20">
+						<h2 class="text-2xl text-teal-600">Supporting Documents</h2>
+						<p class="mt-5">
+							In order to ensure we can process your application as quickly as possible, please attach the following
+							documents
+						</p>
+
+						<ol class="my-5 list-decimal">
+							<li class="my-2">Academic Transcripts and Certificates</li>
+							<li class="my-2">Copy of English Evidence or SELT</li>
+							<li class="my-2">Copy of Passport page</li>
+							<li class="my-2">CV for explanation of any gaps in the student's education (if applicable)</li>
+						</ol>
+
+						<div>
+							<div class="flex flex-col items-center justify-center mb-3">
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 1" />
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 2" />
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 3" />
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 4" />
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 5" />
+								<input class="w-full p-2 my-2 border border-black rounded" type="file" name="Attachment 6" />
+							</div>
+						</div>
+					</div>
+
+					<div class="my-20">
+						<h2 class="text-2xl text-teal-600">GDPR</h2>
+
+						<p>Please read the statements below and tick to accept</p>
+
+						<p class="my-5 text-sm">
+							The UK Data Protection Act 1998 and the EU’s GDPR protects the personal data you supply and how it is
+							used, stored and managed. All World Class Academia Ltd services to students are free of charge. World
+							Class Academia Ltd works with all the UK universities and uses the below data to assist with advisory and
+							university applications support.
+						</p>
+
+						<p>
+							<label
+								><input class="mx-2" type="checkbox" name="GDPR" value="Accepted" required />I understand that World
+								Class Academia Ltd will be using my personal data to assist me with my university selection, course
+								selection, document preparation & to support my UK university application; I will be using their free
+								services and taking their advice; I authorize my information to be shared with World Class Academia Ltd,
+								and UK universities, for the purpose of assisting with my application to UK universities. The data
+								provided will assist for the above services.
+							</label>
+						</p>
+
+						<p class="mt-10">
+							Read more about:
+							<a class="text-blue-500 hover:underline" href="./gdpr.html">General Data Protection Regulation</a>
+						</p>
+					</div>
+
+					<input id="_honey" type="text" class="hidden" />
+					<input type="hidden" name="_captcha" value="false" />
+					<input type="hidden" name="_subject" value="Admission Request" />
+					<input type="hidden" name="_template" value="box" />
+
+					<button
+						id="submit"
+						type="submit"
+						class="block w-6/12 p-2 m-auto my-6 text-white bg-navi rounded-3xl lg:w-4/12 hover:bg-blue-500"
+					>
+						Submit
+					</button>
+					<div id="status" class="m-auto mt-4 text-lg font-bold text-center"></div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="border-t border-black border-opacity-25">
+			<div class="flex flex-col justify-around px-10 pt-10 text-center md:flex-row">
+				<div>
+					<p>Our Partners & Accreditations</p>
+					<div class="flex flex-col items-center justify-center my-5 lg:flex-row">
+						<img src="./assets/logos/british-council.jpeg" alt="World Class Academia logo" class="m-4 h-14" />
+						<img src="./assets/logos/national-college.png" alt="World Class Academia logo" class="m-4 h-14" />
+						<img src="./assets/logos/qts.jpeg" alt="World Class Academia logo" class="m-4 h-14" />
+						<img src="./assets/logos/study-uk.jpg" alt="World Class Academia logo" class="mx-4 mt-4 h-14" />
+					</div>
+				</div>
+				<div class="my-5">
+					<ul class="flex flex-col">
+						<li class="my-1 cursor-pointer hover:underline"><a href="./about-us.html">About Us</a></li>
+						<li class="my-1 cursor-pointer hover:underline"><a href="./team.html">The Team</a></li>
+						<li class="my-1 cursor-pointer hover:underline"><a href="./contact-us.html">Contact Us</a></li>
+						<li class="my-1 cursor-pointer hover:underline"><a href="./policies.html">Policies</a></li>
+						<li class="my-1 cursor-pointer hover:underline"><a href="./faq.html">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="my-5">
+				<ul class="flex items-center justify-center">
+					<li class="mx-5">
+						<a href="https://twitter.com/academia_ltd" target="_blank" rel="noopener noreferrer"
+							><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-8" viewBox="0 0 256 209">
+								<path
+									fill="#55acee"
+									d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
+								/></svg
+						></a>
+					</li>
+					<li class="mx-5">
+						<a
+							href="https://www.linkedin.com/company/world-class-academia-ltd"
+							target="_blank"
+							rel="noopener noreferrer"
+							><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-8" viewBox="0 0 256 256">
+								<path
+									fill="#0A66C2"
+									d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+								/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<hr class="w-2/12 m-auto mt-5 border-black" />
+			<p class="p-2 mt-1 text-center">&copy; World Class Academia 2022</p>
+		</footer>
+	</body>
+</html>

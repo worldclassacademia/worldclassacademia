@@ -103,9 +103,14 @@ function submit(e) {
 	const message = document.getElementById('message').value;
 	const _honey = document.getElementById('_honey').value;
 
-	console.log(firstName, lastName, email, subject, message);
-
 	if (!firstName || !lastName || !email || !subject || !message) return;
+
+	if (
+		!email.match(
+			/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+		)
+	)
+		return;
 
 	let status = document.getElementById('status');
 
@@ -131,8 +136,6 @@ function submit(e) {
 	})
 		.then(res => res.json())
 		.then(data => {
-			console.log(data);
-
 			if (data.success === 'false') throw 'Failed';
 
 			status.textContent = 'Submitted successfully. Thank you!';

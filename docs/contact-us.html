@@ -55,7 +55,7 @@
 		<nav class="items-center justify-around hidden w-full h-20 lg:flex">
 			<div>
 				<a href="./index.html"
-					><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="h-16 rounded"
+					><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="h-20 rounded"
 				/></a>
 			</div>
 			<div id="navbar-items">
@@ -66,7 +66,7 @@
 					<li class="ml-5 cursor-pointer"><a href="./int-support.html">International Support</a></li>
 					<li class="ml-5 cursor-pointer"><a href="./study-uk.html">Study UK</a></li>
 					<li class="ml-5 cursor-pointer"><a href="./contact-us.html">Contact Us</a></li>
-					<li class="ml-5 cursor-pointer"><a href="./policies.html">Policies</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./apply-now.html">Apply Now</a></li>
 					<li class="ml-5 cursor-pointer"><a href="./faq.html">FAQ</a></li>
 				</ul>
 			</div>
@@ -99,7 +99,7 @@
 					<a href="./int-support.html"><li class="p-2 my-2 cursor-pointer">International Support</li></a>
 					<a href="./study-uk.html"><li class="p-2 my-2 cursor-pointer">Study UK</li></a>
 					<a href="./contact-us.html"><li class="p-2 my-2 cursor-pointer">Contact Us</li></a>
-					<a href="./policies.html"><li class="p-2 my-2 cursor-pointer">Policies</li></a>
+					<a href="./apply-now.html"><li class="p-2 my-2 cursor-pointer">Apply Now</li></a>
 					<a href="./faq.html"><li class="p-2 my-2 cursor-pointer">FAQ</li></a>
 				</ul>
 			</div>
@@ -123,28 +123,35 @@
 				<h2 class="text-2xl text-teal-600">Send us a message</h2>
 				<form id="contactForm" onsubmit="return false">
 					<div class="flex w-8/12 m-auto my-6">
+						<div class="relative w-6/12 mr-2">
+							<label for="firstName" class="absolute left-0 text-sm -top-6">First Name</label>
+							<input
+								id="firstName"
+								type="text"
+								class="block w-full h-10 p-2 m-auto mr-2 text-center border border-black outline-none rounded-xl focus:rounded-full"
+								required
+							/>
+						</div>
+						<div class="relative w-6/12">
+							<label for="lastName" class="absolute left-0 text-sm -top-6">Last Name</label>
+							<input
+								id="lastName"
+								type="text"
+								class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="relative w-8/12 m-auto mt-10">
+						<label for="email" class="absolute left-0 text-sm -top-6">Email</label>
 						<input
-							id="firstName"
-							type="text"
-							class="block w-8/12 h-10 p-2 m-auto mr-2 text-center border border-black outline-none rounded-xl focus:rounded-full"
-							placeholder="First Name"
-							required
-						/>
-						<input
-							id="lastName"
-							type="text"
-							class="block w-8/12 h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
-							placeholder="Last Name"
+							id="email"
+							type="email"
+							class="block w-full h-10 p-2 m-auto text-center border border-black outline-none rounded-xl focus:rounded-full"
 							required
 						/>
 					</div>
-					<input
-						id="email"
-						type="email"
-						class="block w-8/12 h-10 p-2 m-auto my-6 text-center border border-black outline-none rounded-xl focus:rounded-full"
-						placeholder="Email Address"
-						required
-					/>
 					<select
 						id="subject"
 						class="block w-8/12 h-10 p-2 m-auto my-6 text-center bg-transparent border border-black outline-none rounded-xl focus:rounded-full"
@@ -164,15 +171,18 @@
 						<option value="Courses">Courses</option>
 						<option value="Other">Other</option>
 					</select>
-					<textarea
-						id="message"
-						name="message"
-						cols="30"
-						rows="5"
-						class="block w-8/12 p-2 m-auto my-6 text-center border border-black outline-none resize-none rounded-xl focus:rounded-3xl"
-						placeholder="Message"
-						required
-					></textarea>
+
+					<div class="relative w-8/12 m-auto mt-10">
+						<label for="message" class="absolute left-0 text-sm -top-6">Message</label>
+						<textarea
+							id="message"
+							name="message"
+							cols="30"
+							rows="5"
+							class="block w-full p-2 m-auto my-6 text-center border border-black outline-none resize-none rounded-xl focus:rounded-3xl"
+							required
+						></textarea>
+					</div>
 
 					<input id="_honey" type="text" class="hidden" />
 
@@ -225,7 +235,7 @@
 		<footer class="border-t border-black border-opacity-25">
 			<div class="flex flex-col justify-around px-10 pt-10 text-center md:flex-row">
 				<div>
-					<p>Our Partners</p>
+					<p>Our Partners & Accreditations</p>
 					<div class="flex flex-col items-center justify-center my-5 lg:flex-row">
 						<img src="./assets/logos/british-council.jpeg" alt="World Class Academia logo" class="m-4 h-14" />
 						<img src="./assets/logos/national-college.png" alt="World Class Academia logo" class="m-4 h-14" />
