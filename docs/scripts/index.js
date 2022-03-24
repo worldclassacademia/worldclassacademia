@@ -48,7 +48,17 @@ function init() {
 
 	if (document.forms.length === 0) return;
 
-	document.getElementById('submit').addEventListener('click', submit);
+	const submitBtn = document.getElementById('submit');
+
+	if (submitBtn) {
+		submitBtn.addEventListener('click', submit);
+	}
+
+	const submitNowBtn = document.getElementById('submit-now');
+
+	if (submitNowBtn) {
+		selects(submitNowBtn);
+	}
 }
 
 window.onload = function () {
@@ -95,24 +105,30 @@ function slider() {
 	}
 }
 
-function submit(e) {
+function submit() {
 	const firstName = document.getElementById('firstName').value;
 	const lastName = document.getElementById('lastName').value;
 	const email = document.getElementById('email').value;
+	const phoneNumber = document.getElementById('phoneNumber').value;
 	const subject = document.getElementById('subject').value;
 	const message = document.getElementById('message').value;
 	const _honey = document.getElementById('_honey').value;
 
 	if (!firstName || !lastName || !email || !subject || !message) return;
 
+	let status = document.getElementById('status');
+
 	if (
 		!email.match(
 			/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
 		)
-	)
-		return;
+	) {
+		status.textContent = 'Invalid email';
 
-	let status = document.getElementById('status');
+		status.classList.add('text-red-500');
+
+		return;
+	}
 
 	status.textContent = 'Submitting, please stand by...';
 
@@ -129,7 +145,8 @@ function submit(e) {
 			_captcha: false,
 			_replyto: email,
 			_template: 'box',
-			name: `${firstName} ${lastName}`,
+			name: `${titleCase(firstName)} ${titleCase(lastName)}`,
+			'Phone Number': phoneNumber,
 			email,
 			message,
 		}),
@@ -146,4 +163,151 @@ function submit(e) {
 			status.textContent = 'An error occurred while trying to submit. Please try again later.';
 			status.classList.add('text-red-500');
 		});
+}
+
+function selects(button) {
+	const destination = new SlimSelect({
+		select: '#destination',
+		showSearch: false,
+		hideSelectedOption: true,
+		placeholder: 'Study Destination',
+	});
+
+	const universities = new SlimSelect({
+		select: '#universities',
+		closeOnSelect: false,
+		allowDeselectOption: true,
+		limit: 5,
+		placeholder: 'Universities (max: 5)',
+	});
+
+	const programme = new SlimSelect({
+		select: '#programme',
+		showSearch: false,
+		hideSelectedOption: true,
+		placeholder: 'Programme',
+	});
+
+	const pathway = new SlimSelect({
+		select: '#pathway',
+		showSearch: false,
+		hideSelectedOption: true,
+		placeholder: 'Pathway',
+	});
+
+	const intake = new SlimSelect({
+		select: '#intake',
+		showSearch: false,
+		hideSelectedOption: true,
+		placeholder: 'Intake',
+	});
+
+	button.addEventListener('click', () => {
+		submitApplyNow(destination, universities, programme, pathway, intake);
+	});
+}
+
+function submitApplyNow(destination, universities, programme, pathway, intake) {
+	const firstName = document.getElementById('firstName').value;
+	const lastName = document.getElementById('lastName').value;
+	const phoneNumber = document.getElementById('phoneNumber').value;
+	const birth = document.getElementById('birth').value;
+	const gender = document.getElementById('gender').value;
+	const nationality = document.getElementById('nationality').value;
+	const country = document.getElementById('country').value;
+	const email = document.getElementById('email').value;
+	const info = document.getElementById('info').value;
+	const destinationSelect = document.getElementById('destination').value;
+	const universitiesSelect = document.getElementById('universities').value;
+	const programmeSelect = document.getElementById('programme').value;
+	const pathwaySelect = document.getElementById('pathway').value;
+	const intakeSelect = document.getElementById('intake').value;
+	const gdpr = document.getElementById('gdpr').checked;
+	const _honey = document.getElementById('_honey').value;
+
+	if (
+		!firstName ||
+		!lastName ||
+		!phoneNumber ||
+		!email ||
+		!birth ||
+		!gender ||
+		!nationality ||
+		!country ||
+		!destinationSelect ||
+		!universitiesSelect ||
+		!programmeSelect ||
+		!pathwaySelect ||
+		!intakeSelect ||
+		!gdpr
+	)
+		return;
+
+	let status = document.getElementById('status');
+
+	if (
+		!email.match(
+			/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+		)
+	) {
+		status.textContent = 'Invalid email';
+
+		status.classList.add('text-red-500');
+
+		return;
+	}
+
+	status.textContent = 'Submitting, please stand by...';
+
+	fetch(`https://formsubmit.co/ajax/admissions@worldclassacademia.com`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			Accept: 'application/json',
+		},
+		body: JSON.stringify({
+			_subject: `Admission Request (${titleCase(firstName)} ${titleCase(lastName)})`,
+			'Full Name': `${titleCase(firstName)} ${titleCase(lastName)}`,
+			'Phone Number': phoneNumber,
+			'Birth Date': birth,
+			Gender: titleCase(gender),
+			Nationality: titleCase(nationality),
+			Country: titleCase(country),
+			Email: email,
+			'Additional Info': info,
+			'Study Destination': destination.selected(),
+			Universities: universities.selected(),
+			Programme: programme.selected(),
+			Pathway: pathway.selected(),
+			Intake: intake.selected(),
+			GDPR: gdpr ? 'Accepted' : 'Declined',
+			_honey,
+			_captcha: false,
+			_replyto: email,
+			_template: 'box',
+		}),
+	})
+		.then(res => res.json())
+		.then(data => {
+			if (data.success === 'false') throw 'Failed';
+
+			status.textContent = 'Submitted successfully. Thank you!';
+			status.classList.add('text-green-500');
+			document.getElementById(document.forms[0].id).reset();
+			destination.set();
+			universities.set([]);
+			programme.set();
+			pathway.set();
+			intake.set();
+		})
+		.catch(() => {
+			status.textContent = 'An error occurred while trying to submit. Please try again later.';
+			status.classList.add('text-red-500');
+		});
+}
+
+function titleCase(str) {
+	return str.replace(/\w\S*/g, txt => {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	});
 }
