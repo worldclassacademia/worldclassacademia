@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Education is fundamental to the growth of communities, societies and individuals. Education is the engine which transforms our ambitions into a lifestyle. Education empowers us to do what we love. This is why at ‘World Class Academia Ltd’ we are committed to providing you with a world class service to help you to enrol to a course which you will enjoy and prosper at. "
+		/>
+		<meta name="keywords" content="Study, Study UK, Study Internationally" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="worldclassacademia.com" />
+		<meta name="twitter:title" content="WCA - Courses" />
+		<meta
+			name="twitter:description"
+			content="Education is fundamental to the growth of communities, societies and individuals. Education is the engine which transforms our ambitions into a lifestyle. Education empowers us to do what we love. This is why at ‘World Class Academia Ltd’ we are committed to providing you with a world class service to help you to enrol to a course which you will enjoy and prosper at. "
+		/>
+		<meta name="twitter:image" content="https://worldclassacademia.com/assets/images/canary%20wharf.jpg" />
+
+		<meta property="og:type" content="business.business" />
+		<meta property="og:title" content="WCA - Courses" />
+		<meta property="og:url" content="https://worldclassacademia.com" />
+		<meta property="og:image" content="https://worldclassacademia.com/assets/images/canary%20wharf.jpg" />
+		<meta
+			property="business:contact_data:street_address"
+			content="40 Bank street Level 18 Canary Wharf London United Kingdom E14 5NR"
+		/>
+		<meta property="business:contact_data:locality" content="London" />
+		<meta property="business:contact_data:region" content="N/A" />
+		<meta property="business:contact_data:postal_code" content="N/A" />
+		<meta property="business:contact_data:country_name" content="United Kingdom" />
+
+		<title>WCA - Courses</title>
+		<link rel="stylesheet" href="./styles/preflight.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<script src="./scripts/index.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+		<link rel="manifest" href="./site.webmanifest" />
+	</head>
+	<body class="antialiased">
+		<!-- NAVBAR -->
+		<nav class="items-center justify-around hidden w-full h-20 lg:flex">
+			<div>
+				<a href="./index.html"
+					><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="h-20 rounded"
+				/></a>
+			</div>
+			<div id="navbar-items">
+				<ul class="flex">
+					<li class="cursor-pointer"><a href="./index.html">Home</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./about-us.html">About Us</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./team.html">The Team</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./int-support.html">International Support</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./courses.html">Courses</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./contact-us.html">Contact Us</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./apply-now.html">Apply Now</a></li>
+					<li class="ml-5 cursor-pointer"><a href="./faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- MOBILE NAVBAR -->
+		<nav id="menu" class="relative flex flex-col items-center w-full p-2 px-6 bg-white lg:hidden">
+			<div class="my-2">
+				<a href="./index.html"
+					><a href="./index.html"
+						><img src="./assets/logos/wca.png" alt="World Class Academia logo" class="rounded h-28" /></a
+				></a>
+			</div>
+
+			<div class="my-2 text-center text-sm">
+				<h2 class="text-blue-900">World Class Academia Ldt</h2>
+				<p>Empowering you to rise within your academic potential</p>
+			</div>
+
+			<div id="mobile-toggle" class="my-2 cursor-pointer noSelectEffect">
+				<svg
+					id="menu"
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-6 h-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				</svg>
+			</div>
+			<div id="navbar-items-mobile" class="absolute top-0 right-0 z-20 hidden w-6/12 min-h-screen bg-white">
+				<ul class="z-20 flex flex-col text-center">
+					<a href="./index.html"><li class="p-2 my-2 cursor-pointer">Home</li></a>
+					<a href="./about-us.html"><li class="p-2 my-2 cursor-pointer">About Us</li></a>
+					<a href="./team.html"><li class="p-2 my-2 cursor-pointer">The Team</li></a>
+					<a href="./int-support.html"><li class="p-2 my-2 cursor-pointer">International Support</li></a>
+					<a href="./courses.html"><li class="p-2 my-2 cursor-pointer">Courses</li></a>
+					<a href="./contact-us.html"><li class="p-2 my-2 cursor-pointer">Contact Us</li></a>
+					<a href="./apply-now.html"><li class="p-2 my-2 cursor-pointer">Apply Now</li></a>
+					<a href="./faq.html"><li class="p-2 my-2 cursor-pointer">FAQ</li></a>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<div id="header" class="relative overflow-hidden text-center text-white h-80">
+			<div id="grey-filter" class="absolute z-10 min-w-full min-h-full bg-gray-900 bg-opacity-50"></div>
+			<img
+				src="./assets/images/study-uk.jpg"
+				alt="UK Bus"
+				class="object-cover w-full h-full xl:h-auto lg:object-none xl:absolute xl:-top-96"
+			/>
+			<div class="absolute z-10 font-bold inset-center">
+				<h1 class="text-4xl md:text-6xl lg:text-7xl">Courses</h1>
+			</div>
+		</div>
+
+		<div class="container m-auto text-center">
+			<img src="./assets/logos/study-uk.jpg" alt="Study UK Logo" class="h-40 m-auto my-5" />
+			<div class="flex justify-center mt-20 mb-40 md:flex-row">
+				<a
+					href="./assets/files/Study_UK_Guide_English_A4_Landscape_print.pdf"
+					class="w-6/12 p-4 m-4 text-2xl text-white rounded bg-navi hover:bg-red-500"
+					target="_blank"
+					>Guide for students</a
+				>
+				<a
+					href="./assets/files/Study_UK_guide_for_parents.pdf"
+					class="w-6/12 p-4 m-4 text-2xl text-white rounded bg-navi hover:bg-red-500"
+					target="_blank"
+					>Guide for parents</a
+				>
+			</div>
+
+			<div class="w-9/12 m-auto my-40">
+				<p class="text-xl">
+					World Class Academia Ltd has partnered with the British Council to raise awareness of the excellent study
+					opportunities within the UK.
+				</p>
+
+				<p class="mt-5 text-xl">
+					Our British Council certified agents are experts in advising you on the following courses
+				</p>
+			</div>
+
+			<div class="flex flex-wrap justify-center my-40">
+				<div class="p-4 m-4 w-96">
+					<img
+						src="./assets/images/robotics.jpg"
+						alt="AI and Robotics"
+						class="object-cover shadow-xl rounded-3xl w-96 h-72"
+					/>
+					<h2 class="my-4 text-xl font-medium">Ai and Robotics</h2>
+					<p class="mt-6">
+						The UK is a global hub of new thought in artificial intelligence and robotics, so you will be learning at
+						the cutting edge of new thinking and research.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_AI_and_Robotics_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/agriculture.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Agriculture and related sciences</h2>
+					<p class="mt-6">
+						The UKs Agriculture sector benefits from a huge amount of collaboration between our agricultural schools and
+						our world class technological and scientific research.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Agriculture_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/building.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Architecture, building and planning</h2>
+					<p class="mt-6">
+						The UK has an exceptional heritage when it comes to building- from architecture to planning and
+						construction.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Architecture_building_and_planning_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/art.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Art and Design</h2>
+					<p class="mt-6">
+						The UK has a unique heritage in art and design and a creative industry that is now worth £100 billion.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Art_and_Design_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/business.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Business studies</h2>
+					<p class="mt-6">
+						Thanks to its location and timezone, the UK has evolved into a global business hub and is home to the worlds
+						top financial city- London
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Business_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/computer-science.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Computer Science</h2>
+					<p class="mt-6">
+						The UK is at the forefront of computer innovation. The UK tech sector is worth around £180billion and
+						employs more than a fifth of workers in the UK’s biggest cities.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Computer_Science_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/creative-arts.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Creative arts</h2>
+					<p class="mt-6">
+						The UK has a unique creative heritage that is thousands of years old. From Shakespeare to the Beatles, we’ve
+						helped shape the world’s shared cultural language. We’re also home to the largest public broadcasting
+						organization in the world, and with one in eight UK businesses part of the creative industries, 2 the sector
+						provides two million jobs – 75 per cent of them outside London
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Creative_Arts_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/cyber-security.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Cyber Security</h2>
+					<p class="mt-6">
+						The UK is one of the most proactive countries battling cyber-terrorism anywhere in the world and has a cyber
+						security sector worth £8.3bn.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Cyber_Security_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/economics.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Economics</h2>
+					<p class="mt-6">
+						Finance and economics do overlap, but they involve very different skills and appeal to different students.
+						Finance is quite specialized, and focuses on very specific topics such as markets, prices and interest rates
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Economics_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/engineer.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Engineering</h2>
+					<p class="mt-6">
+						The UK is home to centuries of engineering heritage, and that knowledge has been exported worldwide. Today,
+						engineering is vital to the UK economy. The UK is ranked fifth in the world for innovation, and 27 per cent
+						of enterprises in the UK are engineering-related, 2 employing 5.6 million people in the UK.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Engineering_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/env-engineer.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+
+					<h2 class="my-4 text-xl font-medium">Environmental Engineering</h2>
+
+					<p class="mt-6">There are three main areas that environmental engineers try to address:</p>
+
+					<ul class="list-disc">
+						<li>Maintaining the balance of the ecosystem</li>
+						<li>Protecting human health</li>
+						<li>
+							Improving quality of life Once qualified as an environmental engineer, you’ll be using your knowledge of
+							science and engineering to design technologies, systems and processes that will help humans prevent a
+							range of threats to our environment and reverse damage that’s already been done, from preventing flooding
+							to combating air pollution.
+						</li>
+					</ul>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Environmental_Engineering_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/gaming.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Gaming</h2>
+					<p class="mt-6">
+						With 32 million gamers, the UK has the world’s sixth biggest gaming industry, and that passion means there’s
+						always a lot going on. From expos and gaming festivals to gameathons, you’ll find live events up and down
+						the country. The UK also has more than 2,200 gaming companies, many of which have close ties to university
+						departments, giving you plenty of ways to connect with like-minded professionals.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Gaming_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/hospitality.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+
+					<h2 class="my-4 text-xl font-medium">Hospitality</h2>
+					<p class="mt-6">
+						Hospitality, leisure and tourism are the gateway into a truly international career, and the UK is the best
+						possible place to gain the knowledge you need. We’re home to some of the world’s most popular cities and
+						historic landmarks and our tourism industry contributed £72bn to the UK economy in 2018.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Hospitality_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/law.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Law</h2>
+					<p class="mt-6">
+						From the flexible, modular courses to the renowned academics leading them, the UK is one of the best places
+						to read law in the world.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Law_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/marketing.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Marketing</h2>
+					<p class="mt-6">
+						The UK has long been a go-to destination for marketing and advertising. Our creative heritage and business
+						landscape are both among the most developed in the world, and the natural overlap into marketing means we
+						have one of the most exciting and innovative marketing ecosystems anywhere – and a creative industry worth
+						£18.6bn3
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Marketing_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/medicine.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Medicine</h2>
+					<p class="mt-6">
+						The UK has a unique medical heritage. Our universities have been helping to advance medical knowledge for
+						centuries, 2 and we’ve led the world in creating new treatments and widening access to care. We also have
+						one of the most famous healthcare models in the world. The National Health Service is 70 years old, and
+						you’ll develop a strong working knowledge of the service, as well as how it integrates with private practice
+						and the wider care system
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Medicine_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/nurse.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Nursing</h2>
+					<p class="mt-6">
+						The UK has helped to shape professional nursing ever since the 1850s when Florence Nightingale founded the
+						first ever school dedicated to professional nursing at St Thomas’ hospital in London4. From administering
+						vaccines to setting standards in the discipline, we’ve led the world and nursing has played a vital role in
+						supporting our world-leading medical research and care.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Nursing_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/online-english.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<div class="flex flex-col">
+						<h2 class="my-4 text-xl font-medium">Online english class and teacher training ESOL</h2>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/politics.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<div>
+						<h2 class="my-4 text-xl font-medium">Politics</h2>
+						<p class="mt-6">
+							The UK is home to the world’s first elected parliament, and our political history has helped to inform
+							approaches to democracy and government around the globe. It’s also helped to enshrine an exceptional
+							culture of political teaching right across the country.
+						</p>
+						<div class="mt-6">
+							<a
+								class="border border-black rounded p-2 hover:rounded-full"
+								href="./assets/files/Study_UK_Politics_Subject_Fact_sheet_A4_Portrait.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Find Out More</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/psychology.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Psychology</h2>
+					<p class="mt-6">
+						The UK has been at the forefront of modern psychology for hundreds of years. The first psychological society
+						was established here in 1875, followed by the world-famous British Psychological Society in 19014.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Psychology_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/sci-tech.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Science and technology</h2>
+					<p class="mt-6">
+						If you want the best possible teaching in your chosen area, you’ll find plenty on offer in the UK. You’ll be
+						learning under the careful guidance of some of the best science and technology minds in the world. They will
+						be on hand to support you throughout your studies, helping you apply the theory in a versatile, practical
+						way.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Science_and_Technology_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/sociology.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Sociology</h2>
+					<p class="mt-6">
+						The UK has been at the forefront of sociological thinking since the late 19th century and was home to some
+						of the earliest Sociological Societies and the first Sociological Professorship at London School of
+						Economics in 1907.
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Sociology_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+
+				<div class="p-4 m-4 rounded w-96">
+					<img src="./assets/images/sports.jpg" alt="" class="object-cover shadow-xl rounded-3xl w-96 h-72" />
+					<h2 class="my-4 text-xl font-medium">Sports</h2>
+					<p class="mt-6">
+						UK universities are renowned for the quality of their teaching and facilities. As well as having access to
+						state-of-the-art technology, you’ll be able to connect with supportive coaching and develop strong team
+						bonds with your peers. Many universities also have links to teams and companies locally, as well as overseas
+					</p>
+					<div class="mt-6">
+						<a
+							class="border border-black rounded p-2 hover:rounded-full"
+							href="./assets/files/Study_UK_Sport_Subject_Fact_sheet_A4_Portrait.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Find Out More</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<!-- Promo -->
+			<div class="leading-loose">
+				<div class="m-auto my-40 max-w-fit">
+					<a
+						href="https://www.futurelearn.com/courses/prepare-to-study-uk?utm_campaign=prepare_to_study&utm_source=website&utm_medium=world_class_academia"
+						target="_blank"
+						rel="noopener noreferrer"
+						><img
+							id="prepare-img"
+							src="./assets/images/prepare-f2.jpeg"
+							alt="Promotional image prepare to study in the uk"
+							class="h-[12rem] rounded md:h-[20rem]"
+					/></a>
+				</div>
+
+				<div class="my-40">
+					<h2 class="text-4xl text-center text-teal-600">
+						Free online course to learn about, and prepare for, a UK education
+					</h2>
+
+					<p class="my-5">
+						Are you holding an offer from a UK university, or simply interested in learning more about the UK higher
+						education system? The Study UK campaign is running its free online course again to help international
+						students learn about, and prepare for, their UK education.
+					</p>
+
+					<p class="my-5">
+						Hosted on FutureLearn, this four-week online course will teach you everything you need to know about UK
+						higher education, including teaching methods, assessment criteria, and course structures. It will provide
+						you with tips for studying in the English language and practical information about living in the UK and what
+						support you can expect here.
+					</p>
+
+					<p class="my-5">
+						By completing the online course, you will be more confident and feel more prepared, and get more from your
+						experience of studying and living in the UK. During the course, there will also be plenty of opportunities
+						for you to interact with other, like-minded individuals who are preparing for their UK education. Who knows,
+						you may even start making friends before you arrive in the UK!
+					</p>
+
+					<p class="my-5">
+						The online course takes only four weeks to complete, although you can complete it faster if you wish. If you
+						complete all the steps, you will receive a digital certificate.
+					</p>
+
+					<p class="my-5 text-lg font-semibold">
+						What are you waiting for? Sign up today:
+						<a
+							href="https://www.futurelearn.com/courses/prepare-to-study-uk?utm_campaign=prepare_to_study&utm_source=website&utm_medium=world_class_academia"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="underline hover:text-blue-500"
+							>https://www.futurelearn.com/courses/prepare-to-study-uk</a
+						>
+					</p>
+				</div>
+
+				<div class="my-40">
+					<h2 class="text-4xl text-center text-teal-600">Prepare your journey</h2>
+
+					<div class="flex flex-col items-center justify-center my-10 xl:flex-row">
+						<div class="m-2">
+							<h3 class="text-lg">Week One</h3>
+							<div class="my-10">
+								<video id="coming-to-study" class="border border-black rounded" controls>
+									<source src="./assets/videos/prepare-week-one.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+
+						<div class="m-2">
+							<h3 class="text-lg">Week Two</h3>
+							<div class="my-10">
+								<video id="coming-to-study" class="border border-black rounded" controls>
+									<source src="./assets/videos/prepare-week-two.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+
+						<div class="m-2">
+							<h3 class="text-lg">Week Three</h3>
+							<div class="my-10">
+								<video id="coming-to-study" class="border border-black rounded" controls>
+									<source src="./assets/videos/prepare-week-three.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+
+						<div class="m-2">
+							<h3 class="text-lg">Week Four</h3>
+							<div class="my-10">
+								<video id="coming-to-study" class="border border-black rounded" controls>
+									<source src="./assets/videos/prepare-week-four.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container p-2 m-auto">
+					<div class="flex justify-center my-20">
+						<video id="coming-to-study" class="rounded" controls>
+							<source src="./assets/videos/coming-to-study.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+
+				<div class="my-20">
+					<a
+						href="./assets/files/Study_UK_Prepare_to_Study_and_Live_MOOC_A5_Flyer.pdf"
+						class="p-4 m-4 text-2xl text-white rounded bg-navi hover:bg-red-500"
+						target="_blank"
+						>Prepare your studies guide</a
+					>
+				</div>
+
+				<p class="my-40">
+					If you require more comprehensive information for any of the courses above then email at
+					<a href="mailto:info@worldclassacademia.com" class="underline hover:text-blue-500"
+						>info@worldclassacademia.com</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="border-t border-black border-opacity-25">
+			<div class="flex flex-col justify-around px-10 pt-10 text-center">
+				<div>
+					<p>Our Partners & Accreditations</p>
+					<div class="flex flex-col items-center justify-center my-5 lg:flex-row">
+						<img src="./assets/logos/british-council.jpeg" alt="British council logo" class="m-4 h-14" />
+						<img src="./assets/logos/national-college.png" alt="National College logo" class="m-4 h-14" />
+						<img src="./assets/logos/qts.jpeg" alt="Qualified Teacher status logo" class="m-4 h-14" />
+						<img src="./assets/logos/study-uk.jpg" alt="Study UK logo" class="m-4 mt-4 h-20" />
+						<img
+							src="./assets/logos/cambridge-education-group.svg"
+							alt="Cambridge education logo"
+							class="m-4 mt-4 h-14"
+						/>
+						<img src="./assets/logos/oxford education group.svg" alt="Oxford education logo" class="m-4 mt-4 h-14" />
+						<img src="./assets/logos/si-uk.png" alt="SI UK Logo" class="m-4 mt-4 h-14" />
+						<img
+							src="./assets/logos/trinity_college_london_logo.png"
+							alt="Trinity College London"
+							class="m-4 mt-4 h-14"
+						/>
+					</div>
+				</div>
+				<div class="my-5">
+					<ul class="flex flex-col">
+						<li class="my-1"><a class="cursor-pointer hover:underline" href="./about-us.html">About Us</a></li>
+						<li class="my-1"><a class="cursor-pointer hover:underline" href="./team.html">The Team</a></li>
+						<li class="my-1"><a class="cursor-pointer hover:underline" href="./contact-us.html">Contact Us</a></li>
+						<li class="my-1"><a class="cursor-pointer hover:underline" href="./policies.html">Policies</a></li>
+						<li class="my-1"><a class="cursor-pointer hover:underline" href="./faq.html">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="my-5">
+				<ul class="flex items-center justify-center">
+					<li class="mx-5">
+						<a href="https://twitter.com/academia_ltd" target="_blank" rel="noopener noreferrer"
+							><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-8" viewBox="0 0 256 209">
+								<path
+									fill="#55acee"
+									d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
+								/></svg
+						></a>
+					</li>
+					<li class="mx-5">
+						<a
+							href="https://www.linkedin.com/company/world-class-academia-ltd"
+							target="_blank"
+							rel="noopener noreferrer"
+							><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-8" viewBox="0 0 256 256">
+								<path
+									fill="#0A66C2"
+									d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+								/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<hr class="w-2/12 m-auto mt-5 border-black" />
+			<p class="p-2 mt-1 text-center">&copy; World Class Academia 2022</p>
+		</footer>
+
+		<div id="whatsapp" class="fixed z-50 text-4xl bottom-5 right-5">
+			<a href="https://wa.me/+4407561117742" target="_blank" rel="noopener noreferrer"
+				><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-8 md:h-10" viewBox="0 0 256 259">
+					<path
+						fill="#00E676"
+						d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+					/>
+					<path
+						fill="#FFF"
+						d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+					/></svg
+			></a>
+		</div>
+	</body>
+</html>
